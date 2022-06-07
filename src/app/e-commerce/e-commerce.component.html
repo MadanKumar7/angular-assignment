@@ -1,0 +1,31 @@
+<div class="action-container">
+  <a href="javascript:void(0)" aria-label="Grid view button">
+    <img class="icon-img" src="assets/images/grid_icon.png" alt="grid" (click)="gridView=true" >
+  </a>
+  <a href="javascript:void(0)" aria-label="Grid view button">
+    <img class="icon-img" src="assets/images/list_icon.png" alt="list" (click)="gridView=false">
+  </a>
+  <select name="filter" id="filter" (change)="sortProducts($event)">
+    <option value="null" disabled selected>Sort by price</option>
+    <option value="asc">Low to High</option>
+    <option value="desc">High to Low</option>
+  </select>
+  <!-- <img class="icon-img" src="assets/images/filter_icon.png" alt="filter"> -->
+  <button name="Reset" class="btn btn-primary" (click)="resetFilter()" [disabled]="!sorted">Reset</button>
+</div>
+
+<div class="container">
+  <ng-container *ngIf="products.length">
+    <ng-container *ngFor="let item of products">
+      <div class="product-container" [ngClass]="gridView?'none':'list-view'">
+        <img [src]="item.img" alt="item.Id">
+        <div class="description p-3">
+          <h6><span class="label">Title:</span> {{item.Title}}</h6>
+          <h6><span class="label">Description:</span> {{item.Description}}</h6>
+          <h6><span class="label">Price:</span> {{item.Price | currency}}</h6>
+        </div>
+
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

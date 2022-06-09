@@ -9,6 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ECommerceModule } from './e-commerce/e-commerce.module';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BannerModule,
-    CounterModule,
-    CounterSvcModule,
-    DynamicDivsModule,
-    ECommerceModule,
-    StudentModule
+    
    ],
   providers: [],
   bootstrap: [AppComponent]

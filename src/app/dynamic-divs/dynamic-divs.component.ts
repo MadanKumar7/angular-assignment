@@ -13,7 +13,11 @@ export class DynamicDivsComponent implements OnInit {
   ngOnInit(): void {
     for(let i = 0; i<1000; i++){
       this.numbers.push(i);
-    }
+    }    
+  }
+
+  showAlert(number:number){
+    alert(`Button ${number} clicked.`);
   }
 
 }

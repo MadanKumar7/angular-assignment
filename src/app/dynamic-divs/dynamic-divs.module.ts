@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DynamicDivsRoutingModule } from './dynamic-divs-routing.module';
 import { DynamicDivsComponent } from './dynamic-divs.component';
+import { ScrollingModule } from '@angular/cdk/scrolling'
 
 
 @NgModule({
@@ -11,7 +12,12 @@ import { DynamicDivsComponent } from './dynamic-divs.component';
   ],
   imports: [
     CommonModule,
-    DynamicDivsRoutingModule
+    DynamicDivsRoutingModule,
+    ScrollingModule
   ]
 })
-export class DynamicDivsModule { }
+export class DynamicDivsModule {
+  constructor(){
+    console.log('dynamic')
+  }
+ }

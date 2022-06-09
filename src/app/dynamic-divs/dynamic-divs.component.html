@@ -1,7 +1,8 @@
-<div class="container">
-  <!-- <cdk-virtual-scroll-viewport itemSize="1000" class="viewport">
+<div>
+  <cdk-virtual-scroll-viewport itemSize="35" class="viewport">
     <div class="data-container" *cdkVirtualFor="let number of numbers">
-      {{number}}
+      <button class="btn btn-primary" (click)="showAlert(number+1)">{{number+1}}</button>
     </div>
-  </cdk-virtual-scroll-viewport> -->
+  </cdk-virtual-scroll-viewport>
 </div>
+

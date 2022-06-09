@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Calibre', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  all: unset;
+  cursor: pointer;
+}
+
+img{
+  border: 0;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+
+.custom-scroll{
+
+  &::-webkit-scrollbar{
+      width: 10px;
+      height: 10px;
+  }
+  &::-webkit-scrollbar-track{
+      border-radius: 10px;
+      background-color: antiquewhite;
+  }
+  &::-webkit-scrollbar-thumb{
+      background: #C6C6C6 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover{
+      background: #403f3f 0% 0% no-repeat padding-box;;
+  }
+}

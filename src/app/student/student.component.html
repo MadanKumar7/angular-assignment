@@ -1,0 +1,8 @@
+<table>
+  <tr>
+    <th *ngFor="let key of studentKeys" (click)="sortColumn(key)">{{key}}</th>
+  </tr>
+  <tr *ngFor="let student of studentData">
+    <td *ngFor="let key of studentKeys">{{student[key]}}</td>
+  </tr>
+</table>

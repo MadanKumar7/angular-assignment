@@ -1,0 +1,22 @@
+.navbar{
+  padding-bottom: 0;
+  font-size: 1rem;
+  .navbar-brand{
+      color: rgb(85, 53, 53);
+  }
+  .navbar-nav{
+      .nav-item{
+          .nav-link{
+             &:hover, &:focus{
+                  font-weight: 700;
+                  color: black;
+              }
+          }
+      }
+  }
+}
+
+.active-link{
+  border-bottom: 1px solid blue;
+  font-weight: 700;
+}

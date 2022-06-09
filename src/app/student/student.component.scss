@@ -1,0 +1,25 @@
+table{
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th,td{
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+th{
+  background-color: #152A89;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+td{
+  background-color: #DDE5EB;
+  color: black;
+  font-size: 0.75rem;
+}

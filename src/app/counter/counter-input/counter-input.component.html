@@ -1,0 +1,15 @@
+
+<div>
+  <label for="timer-input">Enter Timer Limit:</label>
+  <input type="number" id="timer-input" [formControl]="timerLimit">
+  <div>
+    <button class="btn btn-primary" *ngIf="status==='start'" (click)="startTimer()">Start</button>
+    <button class="btn btn-primary" *ngIf="status==='pause'" (click)="pauseTimer()">Pause</button>
+    <button class="btn btn-secondary" (click)="resetTimer()">Reset</button>
+  </div>
+
+  <div class="pause-log-container custom-scroll">
+    <h6 *ngFor="let pause of pauseArray">Paused at {{pause.value}}</h6>
+  </div>
+
+</div>

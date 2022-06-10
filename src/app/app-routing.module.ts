@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path:'', redirectTo:'/banner', pathMatch:'full'},
-  {path:'**', redirectTo:'/banner', pathMatch:'full'},
   {path:'banner', loadChildren:()=> import('./banner/banner.module').then(m=>m.BannerModule)},
   {path:'counter', loadChildren:()=> import('./counter/counter.module').then(m=>m.CounterModule)},
   {path:'counter-svc', loadChildren:()=> import('./counter-svc/counter-svc.module').then(m=>m.CounterSvcModule)},
